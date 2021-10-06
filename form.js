@@ -9,13 +9,13 @@ class Form{
     display(){
         var title  = createElement("h2");
         title.html("car racing");
-        title.position(130, 10);
+        title.position(displayWidth/2, 50);
        
         
-        this.input.position(130, 160);
+        this.input.position(displayWidth/2-40, displayHeight/2 - 100);
        
         
-        this.button.position(250,200);
+        this.button.position(displayWidth/2, displayHeight/2 );
 
         
         
@@ -32,9 +32,10 @@ class Form{
             player.updateCount(playerCount);
 
             this.greeting.html("hello "+player.name);
-            this.greeting.position(130, 160);
+            this.greeting.position(displayWidth/2, displayHeight/2-50);
         })
     }
+    
 
     hide() {
         this.greeting.hide();

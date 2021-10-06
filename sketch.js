@@ -4,10 +4,12 @@ var playerCount;
 var form, game, player;
 var allPlayer;
 var distance = 0; 
+var car1, car2, car3, car4;
+var cars;
 
 function setup(){
     database = firebase.database();
-    createCanvas(500,500);
+    createCanvas(displayWidth, displayHeight);
 
     game = new Game();
     game.getState();
@@ -26,7 +28,7 @@ function draw(){
         game.play();
     }
     
-    drawSprites();
+   
 }
 
 
